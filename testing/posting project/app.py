@@ -1,0 +1,1 @@
+import instapy_cli

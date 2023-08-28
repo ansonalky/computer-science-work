@@ -1,0 +1,12 @@
+#8.9
+num1=int(input("Enter number:"))
+num2=int(input("Enter number:"))
+print("The sum of two numbers is",num1+num2)
+print("The difference between two numbers is",num1-num2)
+print("The product of two numbers is",num1*num2)
+print("The quotient of two numbers is",num1/num2)
+print("Number 1 to the power of number 2 is",num1**num2)
+num3=int(input("Enter number:"))
+print("The product of number 3 and the sum of number 1 and number 2 is",num3*(num1+num2))
+print("The product of number 3 and the difference between number 1 and number 2 is",num3*(num1-num2))
+print("The sum of number 1 and number 2 to the power of number 3 is",(num1+num2)**num3)

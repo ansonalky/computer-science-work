@@ -1,0 +1,31 @@
+DECLARE Mark,Count:INTEGER
+DECLARE Grade:STRING
+OUTPUT "Enter the numbers of marks:"
+INPUT Count
+for i <- 1 to Count DO
+    OUTPUT "Enter your exam mark:"
+    INPUT Mark
+    IF Mark < 40
+        THEN
+            Grade<-("Fail")
+        ELSE
+            IF Mark < 60 
+                THEN
+                    Grade<-("Pass")
+                ELSE
+                    IF Mark < 80 
+                        THEN
+                            Grade<-("Merit")
+                        ELSE
+                            Grade<-("Distinction")
+                    ENDIF
+            ENDIF
+    ENDIF
+    OUTPUT "The grade is", Grade
+NEXT i        
+
+
+Identifier name             Description
+Mark                        Store the mark from user inputs
+Count                       Store the number of times needed to run the function
+Grade                       By comparing the marks and store the grade

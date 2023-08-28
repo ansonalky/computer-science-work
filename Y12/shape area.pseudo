@@ -1,0 +1,46 @@
+DECLARE length, base, height, radius:INTEGER
+DECLARE Area:REAL
+DECLARE Shape:STRING
+
+OUTPUT "Enter the shape:"
+INPUT Shape
+
+SUBROUTINE Square()
+    OUTPUT "Enter the length of a side:"
+    INPUT length
+    Area<--length * length
+    OUTPUT "The area of the square is", Area
+ENDSUBROUTINE
+
+SUBROUTINE Triangle()
+    OUTPUT "Enter the length of base:"
+    INPUT base
+    OUTPUT "Enter the length of height:"
+    INPUT height
+    Area<--(base*height)/2
+    OUTPUT "The area of the triangle is", Area
+ENDSUBROUTINE
+
+SUBROUTINE Circle()
+    OUTPUT "Enter the length of radius:"
+    INPUT radius
+    Area<--3.14*radius*radius
+    OUTPUT "The area of the circle is", Area
+ENDSUBROUTINE
+
+IF Shape = "Square" or Shape= "square" 
+    THEN
+        Square()
+    ELSE
+        IF Shape = "Triangle" or Shape ="triangle"
+            THEN
+                Triangle()
+            ELSE
+                IF Shape = "Triangle" or Shape ="triangle"
+                    THEN
+                        Triangle()
+                    ELSE
+                        OUTPUT("This shape is not valid in this program")
+                ENDIF
+        ENDIF
+ENDIF
